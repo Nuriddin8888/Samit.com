@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    width: 1224px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+
+header{
+    background: radial-gradient(60.48% 41.55% at 50% 0%, rgba(255, 75, 18, 0.10) 0%, rgba(16, 16, 16, 0.00) 100%), #101010;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 210px;
+    padding: 20px 0px;
+    padding-bottom: 160px;
+}
+
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.nav-link{
+    color: var(--on_surface_variant, #D1BEBE);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+}
+
+
+.nav-link:hover{
+    color: var(--on_surface, #FFF);
+}
+
+
+.header-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color_telegram, #1B92D1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+
+.bx:hover{
+    color: #1B92D1;
+}
+
+
+.header-icon:hover{
+    background-color: #FFF;
+}
+
+
+.bx{
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding-bottom: 160px;
+}
+
+
+
+.hero-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+.hero-btn{
+    border-radius: 16px;
+    background: var(--primary, #FF7043);
+    border: 1px solid #FF7043;
+    color: var(--on_primary, #44261C);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    padding: 12px 18px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+.hero-btn:hover{
+    border: 1px solid #FF7043;
+    background-color: transparent;
+    color: #FF7043;
+}
+
+
+.header-line{
+    background-color: #D1BEBE;
+    height: 0.4px;
+    border: 0.4px solid #D1BEBE;
+}
+
+
+.tarif-line{
+    background-color: #ffae74;
+    height: 0.4px;
+    border: 0.4px solid #ffae74;
+}
+
+
+/* war section */
+
+
+#war{
+    background: #141414;
+}
+
+
+.war{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 120px 0px;
+}
+
+
+.war-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+}
+
+
+.war-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+
+.war-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+.war-line{
+    width: 1px;
+    height: 178px;
+    background: #A48888;
+}
+
+
+.map{
+    background: url("./img/Map.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 597px;
+}
+
+
+/* tarif section */
+
+
+#tarif{
+    background: #141414;
+    padding-bottom: 100px;
+}
+
+
+.tarif-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 80px 0px;
+    gap: 16px;
+}
+
+
+.tarif-title{
+    color: var(--on_surface, #EDDEDE);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+
+.tarif-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+.tarif-cards{
+    display: flex;
+    width: 1224px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.tarif-card{
+    border-radius: 16px;
+    border: 1px solid var(--ouline_variant, #594646);
+    width: 360px;
+    background-color: #2F2F2F;
+}
+
+
+.tarif-card1{
+    border-radius: 16px;
+    border: 1px solid var(--ouline_variant, #594646);
+    width: 360px;
+    background: var(--primary_container, #603223);
+}
+
+
+.tarif-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+    padding: 24px 24px;
+}
+
+
+
+.tarif-card-titl{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+}
+
+
+.tarif-card-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+
+.tarif-card-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    align-self: stretch;
+}
+
+
+.tarif-card-foot{
+    background: #252525;
+    padding: 24px 24px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.tarif-foot-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+}
+
+
+.tarif-foot{
+    display: flex;
+    gap: 10px;
+}
+
+
+.tarif-btn{
+    border-radius: 16px;
+    background-color: #FF7043;
+    border: 1px solid var(--surface_bright, #FF7043);
+    color: var(--surface_bright, #ffffff);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    width: 312px;
+    height: 44px;
+    transition: all 0.200s ease;
+    cursor: pointer;
+}
+
+
+.tarif-btn:active{
+    background-color: transparent;
+    color: #404040;
+    border: 1px solid #404040;
+}
+
+
+.tarif-card-titll{
+    color: var(--on_primary_container, #FF8F6C);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+}
+
+
+.tarif-fot{
+    display: flex;
+    gap: 10px;
+}
+
+
+.tarif-ft{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* analiz section */
+
+
+#analiz{
+    background: #191919;
+    padding-bottom: 100px;
+}
+
+.analiz-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+    padding: 100px 0px 60px 0px;
+}
+
+
+.analiz-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+
+.analiz-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+.analiz-result{
+    padding-bottom: 60px;
+}
+
+
+.heading{
+    width: 1224px;
+    border-radius: 16px;
+    border: 1px solid var(--ouline_variant, #594646);
+    background: var(--surface_container, #252525);
+}
+
+
+.heading-box{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 60px;
+    padding: 36px 36px;
+}
+
+
+.headin{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 36px;
+}
+
+
+.headin-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+
+.headin-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+}
+
+
+.headin-line{
+    width: 100px;
+    height: 1px;
+    background: #A48888;
+    margin: 20px 0px;
+}
+
+
+.heading-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+
+/* footer */
+
+
+footer{
+    background: #101010;
+}
+
+
+.footer-connection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 24px;
+}
+
+
+.connection-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+
+.connection-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.connection-link{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+
+
+.footer-report{
+    width: 460px;
+    border-radius: 16px;
+    border: 1px solid var(--ouline_variant, #594646);
+    background: var(--surface_container_low, #1A1A1A);
+    display: flex;
+    gap: 130px;
+    padding: 10px 10px;
+}
+
+
+.input{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+
+.report-btn{
+    border-radius: 16px;
+    background: var(--primary, #FF7043);
+    color: var(--on_primary, #44261C);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    padding: 12px 12px;
+    border: 1px solid #FF7043;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+.bxs-send{
+    color: #44261C;
+    font-size: 24px;
+}
+
+
+.bxs-send:hover{
+    color: #FF7043;
+}
+
+
+.report-btn:hover{
+    border: 1px solid #FF7043;
+    background-color: transparent;
+    color: #FF7043;
+}
+
+
+.foot{
+    width: 500px;
+    border-radius: 16px;
+    border: 1px solid var(--ouline_variant, #594646);
+    background: var(--surface_container_low, #1A1A1A);
+    padding: 24px 20px;
+}
+
+
+.foot-img{
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foot-titl{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+}
+
+
+.foot-title{
+    color: var(--on_surface, #EDDEDE);
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+
+.foot-text{
+    color: var(--on_surface_variant, #D1BEBE);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.foot-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+
+.foot-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
